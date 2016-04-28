@@ -7,7 +7,6 @@ order_by: published_at
 display_settings:
   seo: true               # display the SEO tab for the content entries
   advanced: false         # display the Advanced tab for the content entries
-  position: 1             # position in the sidebar menu
   hidden: false           # hidden for authors?
 
 fields:
@@ -36,7 +35,7 @@ fields:
     label: Tags
     type: tags
     required: false
-    hint: A list of relevant tags for this blog post
+    hint: A list of relevant tags for this blog post.  Use commas to separate
     localized: false
 
 - blog_categories:
@@ -54,4 +53,11 @@ fields:
     type: file
     required: false
     hint: A teaser/headline image for this blog post
+    localized: false
+
+- body:
+    label: Body of the blog post
+    type: text
+    required: true
+    hint: Type your blog post here!
     localized: false

@@ -1,0 +1,9 @@
+.blog-post {
+  // Replicate img img-responsive for blog post images.
+  img {
+    vertical-align: middle;
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}

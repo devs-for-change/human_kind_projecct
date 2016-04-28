@@ -8,7 +8,6 @@ order_by: title
 display_settings:
   seo: true               # display the SEO tab for the content entries
   advanced: true          # display the Advanced tab for the content entries
-  position: 2             # position in the sidebar menu
   hidden: true            # hidden for authors?
 
 fields:
