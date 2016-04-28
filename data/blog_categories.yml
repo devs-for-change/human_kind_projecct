@@ -1,0 +1,16 @@
+- "Sample 1":
+    blog_entries: [] # Array of target entry slugs
+    # icon: /samples/blog_categories/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+
+- "Sample 2":
+    blog_entries: [] # Array of target entry slugs
+    # icon: /samples/blog_categories/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+
+- "Sample 3":
+    blog_entries: [] # Array of target entry slugs
+    # icon: /samples/blog_categories/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+
+- "Sample 4":
+    blog_entries: [] # Array of target entry slugs
+    # icon: /samples/blog_categories/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+

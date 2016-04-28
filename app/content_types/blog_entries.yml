@@ -1,0 +1,57 @@
+name: Blog entries
+slug: blog_entries
+description: Blog entries for The Huamn Kind Project blog
+label_field_name: title
+order_by: published_at
+
+display_settings:
+  seo: true               # display the SEO tab for the content entries
+  advanced: false         # display the Advanced tab for the content entries
+  position: 1             # position in the sidebar menu
+  hidden: false           # hidden for authors?
+
+fields:
+- title:
+    label: Title
+    type: string
+    required: true
+    hint: The title of the blog post
+    localized: false
+
+- author:
+    label: Author
+    type: string
+    required: false
+    hint: The name of the author, or authors who wrote this blog post
+    localized: false
+
+- published_at:
+    label: Published at
+    type: date_time
+    required: false
+    hint: When the article was/will be published.
+    localized: false
+
+- tags:
+    label: Tags
+    type: tags
+    required: false
+    hint: A list of relevant tags for this blog post
+    localized: false
+
+- blog_categories:
+    label: Categories
+    type: many_to_many
+    required: false
+    hint: Categories to show this blog post in
+    localized: false
+    class_name: blog_categories
+    inverse_of: blog_entries
+    ui_enabled: true
+
+- main_image:
+    label: Main image
+    type: file
+    required: false
+    hint: A teaser/headline image for this blog post
+    localized: false

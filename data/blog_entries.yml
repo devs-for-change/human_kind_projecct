@@ -1,0 +1,19 @@
+- "Sample 1":
+    author: "Iusto molestiae id et aut placeat quae sed vero."
+    blog_categories: [] # Array of target entry slugs
+    # main_image: /samples/blog_entries/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+
+- "Sample 2":
+    author: "Eos aliquam voluptatem vero sed."
+    blog_categories: [] # Array of target entry slugs
+    # main_image: /samples/blog_entries/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+
+- "Sample 3":
+    author: "Reprehenderit tempora inventore quibusdam voluptatem ea quia."
+    blog_categories: [] # Array of target entry slugs
+    # main_image: /samples/blog_entries/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+
+- "Sample 4":
+    author: "Voluptatem molestiae similique porro nemo deserunt aliquid eligendi."
+    blog_categories: [] # Array of target entry slugs
+    # main_image: /samples/blog_entries/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.

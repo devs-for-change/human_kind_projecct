@@ -1,0 +1,37 @@
+name: Blog categories
+slug: blog_categories
+description: A description of the content type for the editors
+label_field_name: title
+order_by: title
+
+# Control the display of the content type in the back-office.
+display_settings:
+  seo: true               # display the SEO tab for the content entries
+  advanced: true          # display the Advanced tab for the content entries
+  position: 2             # position in the sidebar menu
+  hidden: true            # hidden for authors?
+
+fields:
+- title:
+    label: Title
+    type: string
+    required: true
+    hint: Title/name for this category
+    localized: false
+
+- blog_entries:
+    label: Blog entries
+    type: many_to_many
+    required: false
+    hint: The blog entries that are members of this category
+    localized: false    # Define the slug of the target content type
+    class_name: blog_entries
+    inverse_of: blog_categories
+    ui_enabled: true
+
+- icon:
+    label: Icon
+    type: file
+    required: false
+    hint: An icon that represents this category
+    localized: false
