@@ -1,8 +1,8 @@
 # Human readable name of this type
-name: Blog entry image
+name: Blog image
 
 # Lowercase, underscored handle used to access this type
-slug: blog_entry_image
+slug: blog_images
 
 # Explanatory text displayed in the back-office
 description: A description of the content type for the editors
@@ -64,3 +64,9 @@ fields:
     required: false
     hint: Explanatory text displayed in the back office
     localized: false
+
+- blog_entry:
+    label: Blog Entry
+    type: belongs_to
+    class_name: blog_entries
+    required: true

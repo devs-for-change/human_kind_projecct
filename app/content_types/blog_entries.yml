@@ -55,6 +55,13 @@ fields:
     hint: A teaser/headline image for this blog post
     localized: false
 
+- blog_images:
+    label: Images
+    type: has_many
+    class_name: blog_images
+    inverse_of: blog_entry
+    ui_enabled: true
+
 - body:
     label: Body of the blog post
     type: text
