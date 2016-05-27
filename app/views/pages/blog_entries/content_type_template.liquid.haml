@@ -1,0 +1,14 @@
+---
+title: Event template page
+content_type: blog_entries
+---
+{% extends 'layouts/simple' %}
+{% block content/header %}
+{% endblock %}
+{% block content/main %}
+
+%h1
+  {{ blog_entry.title }} on {{ blog_entry.published_at | localized_date: '%m/%d/%Y' }}
+%div
+  {{ blog_entry.body }}
+{% endblock %}
