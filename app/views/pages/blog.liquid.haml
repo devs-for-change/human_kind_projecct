@@ -40,7 +40,8 @@ published: true
 {% for entry in contents.blog_entries %}
 %article.blog-post
   %header
-    %h1 {{ entry.title }}
+    %h1
+      %a{ href: "/blog-entries/{{ entry._slug }}" }{{ entry.title }}
     %p published at {{ entry.published_at }}
   %p {{ entry.body }}
 {% endfor %}

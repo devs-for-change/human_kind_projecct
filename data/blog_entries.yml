@@ -1,0 +1,12 @@
+- First Blog Post:
+    _slug: first-blog-post
+    title: First Blog Post
+    author: Nic Boie
+    published_at: '2016-04-26T20:45:00-05:00'
+    tags:
+    - bears
+    - beets
+    - battlestar galactica
+    blog_categories:
+    - test-category
+    body: <p>Hello World!<img alt="" src="/samples/assets/download.jpg"></p>
