@@ -57,9 +57,9 @@ fields:
 
 - blog_images:
     label: Images
-    type: has_many
+    type: many_to_many
     class_name: blog_images
-    inverse_of: blog_entry
+    inverse_of: blog_entries
     ui_enabled: true
 
 - body:

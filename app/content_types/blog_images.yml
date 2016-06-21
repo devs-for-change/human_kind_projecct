@@ -33,8 +33,9 @@ fields:
     hint: Explanatory text displayed in the back office
     localized: false
 
-- blog_entry:
+- blog_entries:
     label: Blog Entry
-    type: belongs_to
+    type: many_to_many
     class_name: blog_entries
+    inverse_of: blog_imagess
     required: true
