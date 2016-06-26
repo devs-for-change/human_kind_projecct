@@ -27,12 +27,26 @@ published: true
 #   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
 ---
 {% extends 'layouts/simple' %}
-
+{% block content/header %}
+{% endblock %}
 {% block content/main %}
 
 {% editable_text main_content %}
 %h2 Board
 %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
 {% endeditable_text %}
+
+{% with_scope enabled: true %}
+{% for entry in contents.board_members %}
+%article.board_member
+  %h1
+    %a{ href: "/blog-members/{{ entry._slug }}" }{{ entry.name }}
+  %p
+    %a{ href: "{{ entry.website }}", target:"_blank"}
+      %img{ src: "{{ entry.photo.url }}" }
+    %a{ href: "mailto:{{ entry.email }}?subject=Message From A THKP Website Viewer" }{{ entry.email }}
+    {{ entry.bio }}
+{% endfor %}
+{% endwith_scope %}
 
 {% endblock %}
