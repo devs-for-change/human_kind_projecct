@@ -1,27 +1,27 @@
 - "Sample 1":
     bio: "Et cumque modi. Inventore consequuntur dicta sit. Voluptatem ut corporis debitis delectus et. Quaerat sed modi sit saepe et numquam."
-    website: "Ipsa quia delectus suscipit pariatur quisquam quos."
-    email: "Eaque saepe veritatis accusamus."
-    enabled: true # Or false
-    photo: /samples/board_members/avatar.jpg # Path to a file in the public/samples folder or to a remote and external file.
-
-- "Sample 2":
-    bio: "Nihil aut libero. Minima tempore cumque assumenda. Consectetur esse enim deleniti sit consequuntur ut. Sit dolor aut aut et libero iusto commodi. Autem reiciendis earum quo."
-    website: "Quam aut et in voluptates nemo tenetur fuga."
-    email: "Rerum numquam nostrum eum odio architecto consequatur accusamus nam."
+    website: "http://example.com"
+    email: "test@example.com"
     enabled: true # Or false
     photo: /samples/board_members/avatar.jpg # Path to a file in the public/samples folder or to a remote and external file.
 
 - "Sample 3":
     bio: "Laudantium natus optio magnam. Dignissimos ut minus enim fugit molestias. Qui sunt laborum."
-    website: "Omnis ratione aut occaecati animi sed architecto atque."
-    email: "Maiores officiis reiciendis quo."
+    website: "http://example.com"
+    email: "test@example.com"
     enabled: false # Or false
     photo: /samples/board_members/avatar.jpg # Path to a file in the public/samples folder or to a remote and external file.
 
 - "Sample 4":
     bio: "Quae veniam fugit. Maxime modi deserunt voluptatem voluptatem ut possimus. Quia sit debitis sit ut aliquam. Repudiandae dolorum et ipsum. Dolorem laboriosam sed id delectus distinctio."
-    website: "Expedita nemo ab fugit autem vitae."
-    email: "Aspernatur similique commodi voluptatem sed qui."
+    website: "http://example.com"
+    email: "test@example.com"
+    enabled: true # Or false
+    photo: /samples/board_members/avatar.jpg # Path to a file in the public/samples folder or to a remote and external file.
+
+- "Sample 2":
+    bio: "Nihil aut libero. Minima tempore cumque assumenda. Consectetur esse enim deleniti sit consequuntur ut. Sit dolor aut aut et libero iusto commodi. Autem reiciendis earum quo."
+    website: "http://example.com"
+    email: "test@example.com"
     enabled: true # Or false
     photo: /samples/board_members/avatar.jpg # Path to a file in the public/samples folder or to a remote and external file.
