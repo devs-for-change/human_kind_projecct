@@ -1,0 +1,28 @@
+---
+title: Event template page
+content_type: board_members
+---
+{% extends 'layouts/simple' %}
+{% block content/header %}
+{% endblock %}
+{% block content/main %}
+
+%div#board-member-show
+  %h1
+    {{ board_member.name }}
+  %img.img.img-responsive{ src: "{{board_member.photo.url }}" }
+  %h2 Biography
+  %p {{ board_member.bio }}
+  %h2 Website
+  %p
+    %a{ href: "{{ board_member.website }}" } {{ board_member.website }}
+  %h2 Email
+  %a{ href: "mailto:{{ board_member.email }}" }{{ board_member.email }}
+  %h2 Status
+  {% if board_member.enabled %}
+  %p Active
+  {% else %}
+  %p Inactive
+  {% endif %}
+
+{% endblock %}

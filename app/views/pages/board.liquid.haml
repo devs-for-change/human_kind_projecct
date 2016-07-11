@@ -1,5 +1,5 @@
 ---
-title: Board Information
+title: Board
 
 # true if the page is included in the menu
 listed: true
@@ -40,7 +40,7 @@ published: true
 {% for entry in contents.board_members %}
 %article.board_member
   %h1
-    %a{ href: "/blog-members/{{ entry._slug }}" }{{ entry.name }}
+    %a{ href: "/board-members/{{ entry._slug }}" }{{ entry.name }}
   %p
     %a{ href: "{{ entry.website }}", target:"_blank"}
       %img{ src: "{{ entry.photo.url }}" }

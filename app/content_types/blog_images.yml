@@ -1,0 +1,41 @@
+name: Blog images
+slug: blog_images
+description: A description of the content type for the editors
+label_field_name: title
+order_by: manually
+
+fields:
+- title:
+    label: Title
+    type: string
+    required: true
+    hint: Explanatory text displayed in the back office
+    localized: false
+
+- image_credit:
+    label: Image credit
+    type: string
+    required: false
+    hint: Explanatory text displayed in the back office
+    localized: false
+
+- tags:
+    label: Tags
+    type: tags
+    required: false
+    hint: Explanatory text displayed in the back office
+    localized: false
+
+- image:
+    label: Image
+    type: file
+    required: false
+    hint: Explanatory text displayed in the back office
+    localized: false
+
+- blog_entries:
+    label: Blog Entry
+    type: many_to_many
+    class_name: blog_entries
+    inverse_of: blog_imagess
+    required: true
