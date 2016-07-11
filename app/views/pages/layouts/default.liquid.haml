@@ -20,9 +20,11 @@ is_layout: false
 
   %body
     {% include 'nav' %}
-
-    {% block content %}
-    {% endblock %}
+    .container
+      .row
+        .col-xs-12
+          {% block content %}
+          {% endblock %}
 
     {% include 'footer' %}
 

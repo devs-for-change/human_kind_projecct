@@ -4,11 +4,10 @@ description: A description of the content type for the editors
 label_field_name: title
 order_by: title
 
-# Control the display of the content type in the back-office.
 display_settings:
-  seo: true               # display the SEO tab for the content entries
-  advanced: true          # display the Advanced tab for the content entries
-  hidden: true            # hidden for authors?
+  seo: true
+  advanced: true
+  hidden: true
 
 fields:
 - title:
@@ -23,7 +22,7 @@ fields:
     type: many_to_many
     required: false
     hint: The blog entries that are members of this category
-    localized: false    # Define the slug of the target content type
+    localized: false
     class_name: blog_entries
     inverse_of: blog_categories
     ui_enabled: true

@@ -5,29 +5,29 @@ label_field_name: title
 order_by: manually
 
 fields:
-- title: # The lowercase, underscored name of the field
-    label: Title # Human readable name of the field
+- title:
+    label: Title
     type: string
     required: true
     hint: Explanatory text displayed in the back office
     localized: false
 
-- image_credit: # The lowercase, underscored name of the field
-    label: Image credit # Human readable name of the field
+- image_credit:
+    label: Image credit
     type: string
     required: false
     hint: Explanatory text displayed in the back office
     localized: false
 
-- tags: # The lowercase, underscored name of the field
-    label: Tags # Human readable name of the field
+- tags:
+    label: Tags
     type: tags
     required: false
     hint: Explanatory text displayed in the back office
     localized: false
 
-- image: # The lowercase, underscored name of the field
-    label: Image # Human readable name of the field
+- image:
+    label: Image
     type: file
     required: false
     hint: Explanatory text displayed in the back office

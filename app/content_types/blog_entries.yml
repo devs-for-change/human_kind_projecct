@@ -5,9 +5,9 @@ label_field_name: title
 order_by: published_at
 
 display_settings:
-  seo: true               # display the SEO tab for the content entries
-  advanced: false         # display the Advanced tab for the content entries
-  hidden: false           # hidden for authors?
+  seo: true
+  advanced: false
+  hidden: false
 
 fields:
 - title:
@@ -67,4 +67,11 @@ fields:
     type: text
     required: true
     hint: Type your blog post here!
+    localized: false
+
+- teaser:
+    label: Teaser information - when full body not available
+    type: text
+    required: true
+    hint: Enter a short paragraph about the blog post here
     localized: false
