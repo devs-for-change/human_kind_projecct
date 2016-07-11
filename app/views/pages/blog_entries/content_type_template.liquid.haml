@@ -9,6 +9,6 @@ content_type: blog_entries
 
 %h1
   {{ blog_entry.title }} on {{ blog_entry.published_at | localized_date: '%m/%d/%Y' }}
-%div
+%div#blog-entry-show
   {{ blog_entry.body }}
 {% endblock %}
